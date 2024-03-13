@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #FFFFFF"></canvas>
-    <script src="Build/NECNewBuild.loader.js"></script>
+    <script src="Build/NECLatest.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -18,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/NECNewBuild.data",
-        frameworkUrl: "Build/NECNewBuild.framework.js",
-        codeUrl: "Build/NECNewBuild.wasm",
+        dataUrl: "Build/NECLatest.data",
+        frameworkUrl: "Build/NECLatest.framework.js",
+        codeUrl: "Build/NECLatest.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "NEC Metaverse",
